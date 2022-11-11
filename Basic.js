@@ -70,4 +70,46 @@ var num = 3.2345;
 var number = Math.random() * 5;
 // var result = number;
 var result = Math.round(number);
-console.log(result);
+// console.log(result);
+
+
+
+
+// JavaScript condition 
+
+var biscuitPrice = 9;
+if( biscuitPrice < 10){
+    // console.log("I will Eat it")
+}
+else{
+    // console.log("I will not eat it.")
+}
+
+var jobPaiso = false;
+var savings = 500000;
+if(jobPaiso == true && savings > 100000){
+    // console.log("You are ready for sadi");
+}
+else if(jobPaiso == true){
+    // console.log("Kichudin Pore Kotha Bolbhi")
+}
+else{
+    // console.log("Tor kopale biya nai")
+}
+
+
+var date = new Date();
+// console.log(date);
+var date = new Date("2022-11-11");
+// console.log(date)
+
+
+
+// Javascript Array
+
+var friendsAgee= [14, 13, 24, 15, 25, 15, 21,26, 30];
+var tamim = friendsAgee[3];
+// console.log(tamim)
+
+friendsAgee[2] = 34;
+console.log(friendsAgee)

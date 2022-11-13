@@ -210,3 +210,210 @@ function factorial(n){
 }
 var result = factorial(10);
 // console.log(result)
+
+// fibonacchi
+
+var fibo = [ 0, 1];
+for ( var i = 2; i <= 12; i++){
+       fibo[i] = fibo[i-1] + fibo[i-2];
+ }
+// console.log(fibo)
+
+// use function'
+
+function fibonacchi(n){
+     var fibo = [0.1];
+    for ( var i = 2; i <= n; i++){
+         fibo[i] = fibo[i-1] + fibo[i-2];
+         return fibo;
+    }
+ }
+    
+var result = fibonacchi(15);
+// console.log(result)
+
+// fibonacchi recursive
+ function fibonacchi(n){
+     if (n==0){
+         return 0;
+     }if(n==1){
+        return 1;
+     }else{
+        return fibonacchi(n-1) + fibonacchi(n-2);
+     }
+ }
+ var result = fibonacchi(10);
+// console.log(result)
+
+
+// fibonacchi in recursive way
+
+function fibonacchi(n){
+    if(n == 0){
+        return [0];
+    }
+    if(n == 1){
+        return [0,1];
+    }
+    else{
+        var fibo = fibonacchi(n-1);
+        var nextElement = fibo[n-1] + fibo[n-2];
+        fibo.push(nextElement);
+        return fibo;
+    }
+}
+var result = fibonacchi(10);
+// console.log(result)
+
+
+// moulik sonkha
+
+var n = 15;
+for ( i = 2; i < n; i++){
+    // console.log(i, n % 1)
+    if(n % i == 0){
+        // console.log("Not Prime");
+        break;
+    }
+    
+}
+// console.log("Prime Number")
+
+// use function
+
+function isPrime(n){
+   for ( i = 2; i < n; i++){
+    if(n % i ==0){
+        return 'not Prime'
+    }
+   }
+   return 'Prime number'
+}
+var result = isPrime(128);
+// console.log(result)
+
+
+
+
+// swap----odolbodol
+// var a = 5;
+// var b = 7;
+// console.log("Before: a=",a "b=",b);
+// var temp = a
+// a=b
+// b=temp
+// console.log("After: a=",a "b=",b);
+
+// p=5;
+// q=7
+// [p,q] = [q,p];
+// console.log("After Swap: p=p, q=q")
+
+
+// random Number
+
+for (var i =0; i<1; i++){
+    var randomNumber = Math.random()*6;
+    var output = Math.round(randomNumber);
+    // console.log(output)
+}
+
+
+// find maxim number two or three values;
+
+var business = 850;
+var minister = 6950;
+var sochib = 7950;
+// if(business > minister){
+//     if(business > sochib) {
+
+//     // console.log("Business Man is Big");
+// }
+// else{
+//     // console.log("Sochib Is big");
+// }
+// }
+// else{
+//     // if(minister > sochib){
+//         console.log("Minister is Big");
+//     }
+//     else{
+//         // console.log("sochib is big")
+//     }
+// }
+
+var maximum = Math.max(business , minister,sochib)
+// console.log(maximum)
+
+
+// Array Maximum
+var marks = [78,34,23,45,57,89,65,67,34,57,87,35,57,68];
+ var max = marks[0];
+ for(var i = 0; i< marks.length; i++){
+    var element = marks[i];
+    if(element > max){
+        max = element
+    }
+ }
+//  console.log("Higher value is:", max)
+
+// Array Sum
+
+var sum = 0;
+for(var i = 0; i < marks.length; i++){
+    var element = marks[i];
+    sum = sum + element
+}
+// console.log("Total of the Number: ", sum)
+
+
+function getArraySum(number){
+    for(var i = 0; i < marks.length; i++){
+        var element = marks[i];
+        sum = sum + element
+    }
+    return sum;
+}
+var marks = [78,34,23,45,57,89,65,67,34,57,87,35,57,68];
+var result = getArraySum(marks);
+// console.log(result)
+
+
+// remove duplicate from array
+
+var numb = [78,34,23,45, 45,57,89,65, 65,67,34,57,87,35,57,68];
+var uniqueName= [];
+for(var i = 0; i < numb.length; i++){
+    var element = numb[i];
+    var index = uniqueName.indexOf[element];
+    if (index = -1){
+        uniqueName.push(element)
+    }
+}
+// console.log(uniqueName)
+
+// word Count
+var speech = "I am a good student. I am kutukutu";
+var count = 0;
+for(var i= 0; i<speech.length; i++){
+    var char = speech[i];
+    if (char == " " && speech [i-1] !=" "){
+        count++;
+    }
+}
+count++
+// console.log(count)
+
+// reserve string-strinh ke ulto kore dekhabe
+
+function reserveString(str){
+    var reserve = "";
+    for(var i = 0; i< str.length; i++){
+        var char = str[i];
+        reserve = char + reserve;
+    }
+    return reserve
+}
+var statement = "Hello Alien Bhai";
+var forAlien = reserveString(statement);
+// console.log(forAlien)

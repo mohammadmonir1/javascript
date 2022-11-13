@@ -112,4 +112,22 @@ var tamim = friendsAgee[3];
 // console.log(tamim)
 
 friendsAgee[2] = 34;
-console.log(friendsAgee)
+// console.log(friendsAgee)
+var position = friendsAgee.indexOf(25);
+// console.log(position)
+// console.log (friendsAgee[0])
+var noPosition = friendsAgee.indexOf(141);
+// console.log(noPosition)
+friendsAgee.push(29);
+// console.log(friendsAgee)
+// console.log(friendsAgee.length)
+friendsAgee.pop();
+// console.log(friendsAgee);
+friendsAgee.shift();
+// console.log(friendsAgee)
+friendsAgee.unshift(14);
+// console.log(friendsAgee)
+delete friendsAgee[2];
+// console.log(friendsAgee)
+friendsAgee.slice(2, 4);
+// console.log(friendsAgee)
